@@ -40,16 +40,16 @@ form {
   max-width: 40rem;
   box-shadow: 1rem 1rem 5rem rgba(black, 0.3);
 }
-.form__input-1 {
+.form__input--1 {
   display: flex;
   width: 100%;
   gap: 10px;
 }
-.form__input-1 > * {
+.form__input--1 > * {
   flex-grow: 1;
 }
 
-.form__input-2 {
+.form__input--2 {
   display: block;
   width: 100%;
 }
@@ -88,11 +88,11 @@ form {
   font-size: 1.1rem;
 }
 
-.form__button-blue {
+.form__button--blue {
   background-color: blue;
 }
 
-.form__button-green {
+.form__button--green {
   background-color: green;
 }
 
@@ -101,7 +101,7 @@ form {
     padding: 1.5rem;
     margin: 1rem;
   }
-  .form__input-1 {
+  .form__input--1 {
     display: flex;
     flex-direction: column;
     width: 100%;
