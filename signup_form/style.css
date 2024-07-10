@@ -9,6 +9,16 @@
 html {
   box-sizing: border-box;
 }
+
+.close-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+}
+
 .container {
   min-width: 100vw;
   min-height: 100vh;
