@@ -62,9 +62,9 @@ function foo4(arg) {
 }
 foo4(arr);
 console.log(arr);
-```
 /*
 * [1, 2, 3, 3]
 * The reference of arr is passed to foo2 and stored in arg, and then local variable b is assigned to the reference.
 * Reference itself is passed by value and therefore changing the reference stored in b does not alter the original arr.
 */
+```
