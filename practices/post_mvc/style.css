@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 224, 224);
+}
+
+h1 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+.posts {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background-image: linear-gradient(to bottom right, #fffed3, #ffe9d0);
+  min-height: 100vh;
+  max-width: 500px;
+  padding: 2rem;
+  gap: 2rem;
+  color: rgb(56, 56, 56);
+}
+
+.posts__list {
+  list-style: none;
+  flex-grow: 1;
+}
+
+.posts__list-item {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid #b1afff; */
+  background-color: rgba(255, 255, 255, 0.603);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.posts__list-delete-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.posts__form {
+  position: relative;
+  width: 100%;
+}
+
+.posts__form > * {
+  border: none;
+  border-radius: 1000px;
+  padding: 1rem 1.5rem;
+}
+.posts__input {
+  background-color: #fffed3;
+  width: 100%;
+}
+
+.posts__input:focus {
+  outline: none;
+}
+
+.posts__add-btn {
+  background-color: #bbe9ff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
