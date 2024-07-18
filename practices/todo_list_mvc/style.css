@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  /* font-size: inherit; */
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+}
+
+body {
+  /* font-size: 62.5%; */
+  /* font-size: 1.6rem; */
+}
+
+button {
+  cursor: pointer;
+}
+
+.todo {
+  margin-inline: auto;
+  max-width: 500px;
+  min-height: 100vh;
+  background-color: rgba(196, 196, 196, 0.507);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+h1 {
+}
+.todo__input-field {
+  position: relative;
+  width: 100%;
+}
+.todo__input-field > * {
+  padding: 1rem 2rem;
+  border-radius: 1000px;
+  border: none;
+}
+.todo__input {
+  width: 100%;
+}
+.todo__input:focus {
+  outline: none;
+}
+
+.todo__input-button {
+  position: absolute;
+  transform: translateX(-100%);
+  background-color: lightcoral;
+}
+
+.todo__list {
+  list-style: none;
+  font-size: 1.1rem;
+  flex-grow: 1;
+}
+
+.todo__list-item {
+  position: relative;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.todo__list-delete-btn {
+  border: none;
+  background-color: inherit;
+}
+
+.todo__list-item > span {
+  flex: 0 0 90%;
+  padding: 0.5rem 1rem;
+}
+
+.todo__list-item > span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  border-top: 1px solid black;
+  transition: all 0.2s;
+}
+
+.todo__list-item.done > span::after {
+  width: 90%;
+  border-top: 1px solid black;
+}
