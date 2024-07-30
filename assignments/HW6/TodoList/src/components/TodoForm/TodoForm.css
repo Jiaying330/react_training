@@ -1,0 +1,23 @@
+.todo__form {
+  position: relative;
+  width: 100%;
+}
+.todo__form > * {
+  padding: 1rem 2rem;
+  border-radius: 1000px;
+  border: none;
+}
+
+.todo__input {
+  width: 100%;
+}
+
+.todo__input:focus {
+  outline: none;
+}
+
+.todo__input-btn {
+  position: absolute;
+  transform: translateX(-100%);
+  background-color: lightcoral;
+}

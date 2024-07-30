@@ -86,7 +86,6 @@ const View = (() => {
 
       newPostEl.appendChild(spanEl);
       newPostEl.appendChild(deleteBtn);
-      //   newPostEl.append([spanEl, deleteBtn]);
       newPostEl.classList.add("posts__list-item");
       newPostEl.id = `${post.id}`;
       postList.appendChild(newPostEl);

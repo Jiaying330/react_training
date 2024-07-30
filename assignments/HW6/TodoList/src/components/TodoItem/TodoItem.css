@@ -1,0 +1,32 @@
+.todo__item {
+  position: relative;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.todo__delete-btn {
+  border: none;
+  background-color: inherit;
+}
+
+.todo__item > span {
+  flex: 0 0 90%;
+  padding: 1rem 2rem;
+}
+
+.todo__item > span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  border-top: 1px solid black;
+  transition: all 0.2s;
+}
+
+.todo__item.done > span::after {
+  width: 90%;
+  border-top: 1px solid black;
+}
