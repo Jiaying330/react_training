@@ -3,30 +3,33 @@
   border-bottom: 1px solid rgb(194, 194, 194);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
 
+.todo__item > button {
+  margin: 0.5rem 0;
+}
 .todo__delete-btn {
   border: none;
   background-color: inherit;
 }
 
+.todo__edit-btn {
+  border: none;
+  border-radius: 1000px;
+  padding: 1rem;
+  background-color: var(--color-1);
+}
+
 .todo__item > span {
-  flex: 0 0 90%;
+  margin-right: auto;
   padding: 1rem 2rem;
 }
 
-.todo__item > span::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 0;
-  border-top: 1px solid black;
-  transition: all 0.2s;
-}
-
-.todo__item.done > span::after {
-  width: 90%;
-  border-top: 1px solid black;
+.todo__item > input {
+  margin-right: auto;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: inherit;
 }

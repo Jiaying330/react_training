@@ -19,5 +19,5 @@
 .todo__input-btn {
   position: absolute;
   transform: translateX(-100%);
-  background-color: lightcoral;
+  background-color: var(--color-1);
 }

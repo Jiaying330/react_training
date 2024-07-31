@@ -1,29 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import useTodo from "../../hooks/useTodo";
 import TodoForm from "../TodoForm/TodoForm";
 import TodoList from "../TodoList/TodoList";
 import "./Todo.css";
 
 export default function Todo() {
-  const [tasks, setTasks] = useState([]);
-  const [count, setCount] = useState(0);
+  const { todos, createTodo, deleteTodo, updateTodo } = useTodo([]);
 
   function addBtnOnClick(input) {
     if (input.length > 0) {
-      setTasks((prev) => [...prev, { id: count, task: input }]);
+      createTodo({ task: input });
     }
-    setCount((prev) => prev + 1);
   }
 
   function deleteBtnOnClick(id) {
-    const newTasks = tasks.filter((task) => task.id != id);
-    setTasks(newTasks);
+    deleteTodo(id);
+  }
+
+  function changeBtnOnClick(id, task) {
+    updateTodo(id, task);
   }
 
   return (
     <div className="todo">
       <h1 className="todo__title">Todo List</h1>
       <TodoForm addTask={addBtnOnClick} />
-      <TodoList tasks={tasks} deleteBtnOnClick={deleteBtnOnClick} />
+      <TodoList
+        tasks={todos}
+        deleteBtnOnClick={deleteBtnOnClick}
+        changeBtnOnClick={changeBtnOnClick}
+      />
     </div>
   );
 }

@@ -1,7 +1,11 @@
 import React from "react";
 import TodoItem from "../TodoItem/TodoItem";
 
-export default function TodoList({ tasks, deleteBtnOnClick }) {
+export default function TodoList({
+  tasks,
+  deleteBtnOnClick,
+  changeBtnOnClick,
+}) {
   return (
     <ul className="todo__list">
       {tasks.map((task) => {
@@ -9,7 +13,8 @@ export default function TodoList({ tasks, deleteBtnOnClick }) {
           <TodoItem
             key={task.id}
             task={task.task}
-            onClick={deleteBtnOnClick}
+            deleteOnClick={deleteBtnOnClick}
+            changeOnClick={changeBtnOnClick}
             id={task.id}
           />
         );
