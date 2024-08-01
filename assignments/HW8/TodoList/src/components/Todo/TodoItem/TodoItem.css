@@ -1,0 +1,35 @@
+.todo__item {
+  position: relative;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.todo__item > button {
+  margin: 0.5rem 0;
+}
+.todo__delete-btn {
+  border: none;
+  background-color: inherit;
+}
+
+.todo__edit-btn {
+  border: none;
+  border-radius: 1000px;
+  padding: 1rem;
+  background-color: var(--color-1);
+}
+
+.todo__item > span {
+  margin-right: auto;
+  padding: 1rem 2rem;
+}
+
+.todo__item > input {
+  margin-right: auto;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: inherit;
+}

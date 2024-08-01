@@ -1,0 +1,40 @@
+:root {
+  --color-1: #fef3e2;
+  --color-2: #bec6a0;
+  --color-3: #708871;
+  --color-4: #606676;
+  --gradient: linear-gradient(
+    to bottom,
+    var(--color-1),
+    var(--color-2),
+    var(--color-3)
+  );
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}

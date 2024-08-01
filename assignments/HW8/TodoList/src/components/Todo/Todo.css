@@ -1,0 +1,10 @@
+.todo {
+  margin-inline: auto;
+  max-width: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-image: var(--gradient);
+}
