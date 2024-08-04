@@ -1,0 +1,13 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  /* table-layout: fixed; */
+}
+
+table {
+  /* width: 30vw; */
+  width: 300px;
+  text-align: center;
+  table-layout: fixed;
+}
