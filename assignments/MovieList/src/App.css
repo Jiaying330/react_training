@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2em;
+  /* text-align: center; */
+  background-color: rgba(128, 128, 128, 0.212);
+}
+
+.app {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center; */
+}
+h1 {
+  /* background-color: aqua; */
+  text-align: center;
+  padding: 2rem;
+}
